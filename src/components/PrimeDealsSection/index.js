@@ -3,6 +3,7 @@ import Cookies from 'js-cookie'
 import Loader from 'react-loader-spinner'
 
 import ProductCard from '../ProductCard'
+
 import './index.css'
 
 const apiStatusConstants = {
@@ -59,9 +60,8 @@ class PrimeDealsSection extends Component {
     }
   }
 
-  renderPrimeDealsList = () => {
+  renderPrimeDealsListView = () => {
     const {primeDeals} = this.state
-
     return (
       <div>
         <h1 className="primedeals-list-heading">Exclusive Prime Deals</h1>
@@ -92,7 +92,7 @@ class PrimeDealsSection extends Component {
     const {apiStatus} = this.state
     switch (apiStatus) {
       case apiStatusConstants.success:
-        return this.renderPrimeDealsList()
+        return this.renderPrimeDealsListView()
       case apiStatusConstants.failure:
         return this.renderPrimeDealsFailureView()
       case apiStatusConstants.inProgress:
