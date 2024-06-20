@@ -38,7 +38,7 @@ const CartItem = props => (
               <button
                 type="button"
                 className="quantity-controller-button"
-                data-testid="minus"
+                testid="minus"
                 aria-label="decrement quantity"
                 onClick={onClickDecrement}
               >
@@ -48,7 +48,7 @@ const CartItem = props => (
               <button
                 type="button"
                 className="quantity-controller-button"
-                data-testid="plus"
+                testid="plus"
                 aria-label="increment quantity"
                 onClick={onClickIncrement}
               >
@@ -59,7 +59,7 @@ const CartItem = props => (
               <p className="cart-total-price">Rs {totalPrice}/-</p>
               <button
                 className="remove-button"
-                data-testid="remove"
+                testid="remove"
                 type="button"
                 onClick={onRemoveCartItem}
               >
