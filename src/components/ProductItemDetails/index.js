@@ -164,7 +164,6 @@ class ProductItemDetails extends Component {
                     aria-label="decrement quantity"
                     className="quantity-controller-button"
                     onClick={this.onDecrementQuantity}
-                    testid="minus"
                   >
                     <BsDashSquare className="quantity-controller-icon" />
                   </button>
@@ -173,7 +172,6 @@ class ProductItemDetails extends Component {
                     type="button"
                     className="quantity-controller-button"
                     onClick={this.onIncrementQuantity}
-                    testid="plus"
                     aria-label="increment quantity"
                   >
                     <BsPlusSquare className="quantity-controller-icon" />

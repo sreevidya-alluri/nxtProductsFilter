@@ -136,3 +136,14 @@
   line-height: 16px;
   color: #ff0b37;
 }
+.test {
+  color: blue;
+  font-size: 14px;
+  text-align: left;
+  margin-top: 12px;
+}
+span {
+  color: darkblue;
+  font-size: 14px;
+  text-align: left;
+}
